@@ -1,0 +1,117 @@
+.footer {
+    height: 80px;
+    background-color: #3D4050;
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__copyright {
+        font-family: $lato;
+        font-weight: 400;
+        font-size: 13px;
+        color: $white;
+        padding-right: 40px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0px;
+            top: -2px;
+            width: 1px;
+            height: 18px;
+            background-color: #C3C3C3;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        gap: 38px;
+        padding-left: 35px;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+.payments {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    padding: 0 40px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 1px;
+        height: 18px;
+        background-color: #C3C3C3;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: $medium) {
+    .footer {
+        height: auto;
+
+        &__wrap {
+            flex-direction: column;
+        }
+
+        &__copyright {
+            padding-right: 0px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+    
+            &::after {
+                content: none;
+            }
+        }
+    
+        &__contacts {
+            padding-left: 0px;
+            padding-bottom: 20px;
+        }
+    }
+
+    .payments {
+        padding-bottom: 20px;
+    
+        &::after {
+            content: none;
+        }
+    }
+}
+
+@media screen and (max-width: $xxsmall) {
+    .footer {        
+        &__copyright {
+            text-align: center;
+        }
+
+        &__contacts {
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    .payments {
+        flex-direction: column;
+        gap: 26px;
+    }
+}

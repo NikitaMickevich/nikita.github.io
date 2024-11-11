@@ -1,0 +1,10 @@
+.main {
+    padding-top: 121px;
+    background: #272733 url(../images/map.png);
+}
+
+@media screen and (max-width: $xxsmall) {
+    .main {
+        padding-top: 61px;
+    }
+}

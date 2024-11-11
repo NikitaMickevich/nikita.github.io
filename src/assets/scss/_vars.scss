@@ -1,0 +1,18 @@
+$primary:   #202020;
+$secondary: #43ABF0;
+$white:     #fff;
+
+$lato: 'Lato', sans-serif;
+
+$xxsmall: 450px;
+$xsmall: 768px;
+$small: 885px;
+$medium: 991px;
+$large: 1200px;
+
+@mixin vertical-spacer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}

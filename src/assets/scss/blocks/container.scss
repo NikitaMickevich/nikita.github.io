@@ -1,0 +1,25 @@
+.container {
+    max-width: 1172px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.top {
+    background: url(../images/office.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+@media screen and (max-width: $large) {
+    .container {
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: $xxsmall) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
